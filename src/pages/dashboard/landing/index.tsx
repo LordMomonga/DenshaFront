@@ -95,10 +95,10 @@ function Index() {
     }
 
 
-    // Accept
+    // Accept 
     const handleSetSelectedId = (id: any, type: any) => {
         setSelectedId(id);
-        if(type == 'accepted') {
+        if(type === 'accepted') {
             toggleAcceptModal();
         }else {
             toggleRejectModal();

@@ -114,6 +114,7 @@ section {
   padding-right: 2em;
   margin: 0 auto;
   margin-top: 30px;
+  font-size: 19px;
 }
 
 .hero .con .sec-1 h5 {
@@ -135,7 +136,7 @@ section {
 .hero .con .sec-1 p {
   font-size: 1.2em;
   color: var(--text-light);
-  width: 40%;
+  width: 50%;
   margin-bottom: 3em;
 }
 .hero .con .sec-1 .hero-btns {
@@ -593,3 +594,18 @@ section {
   }
 }
 
+@media  (max-width: 600px){
+  .hero .con .sec-1 p {
+  font-size: 1em;
+  color: var(--text-light);
+  width: 100%;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+
+}
+.nav{
+  padding-inline: 5%;
+}
+
+}

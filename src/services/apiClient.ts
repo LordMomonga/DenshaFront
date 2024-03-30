@@ -3,13 +3,13 @@ import { getToken } from '../utils/storage';
 const apiUrlTest  = 'http://localhost:8070';
 const  apiUrlLive  =  'https://237-virtual-academy-backend.vercel.app/';
 
-const api =  create({
-    baseURL: apiUrlLive,
-    headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-    }
-})
+const api = create({
+  baseURL: apiUrlTest,
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+});
 
 api.addAsyncRequestTransform(async (request: any) => {
    const authToken = getToken();
