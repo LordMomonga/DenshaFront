@@ -1,10 +1,10 @@
 import  { create } from 'apisauce';
 import { getToken } from '../utils/storage';
 const apiUrlTest  = 'http://localhost:8070';
-const  apiUrlLive  =  'https://237-virtual-academy-backend.vercel.app/';
+const  apiUrlLive  =  'https://densha.vercel.app/';
 
 const api = create({
-  baseURL: apiUrlTest,
+  baseURL: apiUrlLive,
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
