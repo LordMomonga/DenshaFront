@@ -220,7 +220,7 @@ function Index() {
                   </ul>
                 </div>
                 <div className="sec-2">
-                  <img src={require('../../assets/images/illustrtions/landing-2.png')} alt="" />
+                  <img src={require('../../assets/images/illustrtions/imageed.png')} alt="" />
                 </div>
               </div>
             </div>

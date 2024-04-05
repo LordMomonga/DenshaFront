@@ -242,7 +242,7 @@ function Layout({ title, children, pageTitle = '' } : any) {
                 onClick={() => setShowUserMenu(!showUserMenu)}
               ></i>
               <img
-                src={require("../../assets/images/users/avatar.jpg")}
+                src={require("../../assets/images/users/iconpro.png")}
                 alt=""
               />
               <p>{user?.username}</p>

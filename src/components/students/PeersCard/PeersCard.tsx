@@ -8,7 +8,7 @@ function PeersCard() {
     return (
         <div className="peers-card">
         <div className="card-image">
-            <img src={require('../../../assets/images/users/avatar.jpg')} alt="" />
+            <img src={require('../../../assets/images/users/iconpro.png')} alt="" />
         </div>
         <div className="info">
             <div className="card-content">

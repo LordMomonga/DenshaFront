@@ -249,7 +249,7 @@ function StudentLayout({ title, children, pageTitle } : any) {
             <div className={`user-menu ${showUserMenu ? 'show' : ''}`}>
                 <div className="user-menu-top">
                     <i className="fa fa-times" onClick={() => setShowUserMenu(!showUserMenu)}></i>
-                    <img src={require("../../assets/images/users/avatar.jpg")} alt="" />
+                    <img src={require("../../assets/images/users/iconpro.png")} alt="" />
                     <p>{user?.username}</p>
                     <span>Student</span>
                 </div>
