@@ -2127,6 +2127,11 @@ form .flex .login-remember img {
 
 
 /* end of category styles  */
+.logo a{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {}
 

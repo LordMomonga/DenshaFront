@@ -1,14 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApp, getApps } from 'firebase/app'
 
-const firebaseConfig =  {
-  apiKey: "AIzaSyDzFs0-elh3y4cYmfY-DezuXRcGd-AToeY",
-  authDomain: "virtual-academy-c9a77.firebaseapp.com",
-  projectId: "virtual-academy-c9a77",
-  storageBucket: "virtual-academy-c9a77.appspot.com",
-  messagingSenderId: "717045795694",
-  appId: "1:717045795694:web:38b92252ebf6730624cf7f"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyCJvvCVwgQMQKoyvQcc8COOIDl2uii5Mpo",
+  authDomain: "densha-46f86.firebaseapp.com",
+  projectId: "densha-46f86",
+  storageBucket: "densha-46f86.appspot.com",
+  messagingSenderId: "548457476900",
+  appId: "1:548457476900:web:540ccbe21e67957a3d79b1",
+};
 
 
 // Initialize Firebase

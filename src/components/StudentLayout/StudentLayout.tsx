@@ -110,7 +110,7 @@ function StudentLayout({ title, children, pageTitle } : any) {
         <div className="dashboard-grid">
         <div className={`sidebar-student student student-dashboard-sidebar  ${!showStudNav ? 'show' : ''}`}>
             <div className="logo" style={{cursor: 'pointer'}}>
-                <a onClick={() => navigate('/')}><img src={require('../../assets/images/logo/logo-light.png')} alt=" " /></a>
+                <a onClick={() => navigate('/')}>Densha</a>
             </div>
             <div className="menu">
                 <div className="sub-menu">

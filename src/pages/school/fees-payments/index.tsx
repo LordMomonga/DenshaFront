@@ -220,9 +220,10 @@ function Index() {
                                     <td className="flex-center">
                                         <div className="action">
                                             <Tippy content="View Receipt"  animation="fade">
-                                            <a onClick={() => {
+                                            <a onClick={(e) => {
+                                                e.preventDefault()
                                                 // handleSetVideoUrl(data.answers_file)
-                                            }} className="see" href={data?.file_url} target="_blank" download><IoMdCloudDownload onClick={() => null} size={14}/></a>
+                                            }} className="see" href={data?.file_url}  target="_blank" download><IoMdCloudDownload onClick={() => null} size={14}/></a>
                                             </Tippy>
                                             <Tippy content="Accept"  animation="fade">
                                             <a onClick={() => {

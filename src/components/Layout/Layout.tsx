@@ -109,140 +109,180 @@ function Layout({ title, children, pageTitle = '' } : any) {
 
     
     return (
-        <div className="dashboard-grid">
-        <div className={`sidebar ${!showNav ? 'show' : ''}`}>
-            <div className="logo" style={{cursor: 'pointer'}}>
-                <a onClick={() => navigate('/')}><img src={require('../../assets/images/logo/logo-light.png')} alt=" " /></a>
+      <div className="dashboard-grid">
+        <div className={`sidebar ${!showNav ? "show" : ""}`}>
+          <div className="logo" style={{ cursor: "pointer" }}>
+            <a onClick={() => navigate("/")}>Densha</a>
+          </div>
+          <div className="menu">
+            <div className="sub-menu">
+              <div className="title">MAIN NAVIGATION</div>
+              <NavLink className="link" to="/dashboard">
+                <i>
+                  <MdDashboard size={20} />
+                </i>
+                <span>Dashboard</span>
+              </NavLink>
+
+              <NavLink className="link" to="/class-rooms">
+                <i>
+                  <SiGoogleclassroom size={20} />
+                </i>
+                <span>Classrooms</span>
+              </NavLink>
+
+              <NavLink className="link" to="/course-contents">
+                <i>
+                  <MdOutlineContentPaste size={20} />
+                </i>
+                <span>Course Content</span>
+              </NavLink>
+
+              <NavLink className="link" to="/follow-up">
+                <i>
+                  <MdAssignmentLate size={20} />
+                </i>
+                <span>Follow-up</span>
+              </NavLink>
+
+              <NavLink className="link" to="/assignments">
+                <i>
+                  <MdAssignmentLate size={20} />
+                </i>
+                <span>Assignments</span>
+              </NavLink>
+
+              <NavLink className="link" to="/assignment-submissions">
+                <i>
+                  <MdAssignmentTurnedIn size={20} />
+                </i>
+                <span>Assignment Submissions</span>
+              </NavLink>
+
+              <NavLink className="link" to="/assessments">
+                <i>
+                  <MdAssessment size={20} />
+                </i>
+                <span>Assessment</span>
+              </NavLink>
+
+              <NavLink className="link" to="/assessment-submissions">
+                <i>
+                  <MdAssessment size={20} />
+                </i>
+                <span>Assessment Submissions</span>
+              </NavLink>
+
+              <NavLink className="link" to="/pass-exams">
+                <i>
+                  <MdAssessment size={20} />
+                </i>
+                <span>Pass Exams</span>
+              </NavLink>
+
+              <NavLink className="link" to="/live-session">
+                <i>
+                  <GoDeviceCameraVideo size={20} />
+                </i>
+                <span>Live Sessions</span>
+              </NavLink>
             </div>
-            <div className="menu">
-                <div className="sub-menu">
-                    <div className="title">MAIN NAVIGATION</div>
-                    <NavLink className="link" to="/dashboard">
-                    <i><MdDashboard size={20}/></i>
-                        <span>Dashboard</span>
-                    </NavLink>
-
-                    
-            
-                    <NavLink className="link" to="/class-rooms">
-                    <i><SiGoogleclassroom size={20}/></i>
-                        <span>Classrooms</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/course-contents">
-                    <i><MdOutlineContentPaste size={20}/></i>
-                        <span>Course Content</span>
-                    </NavLink>
-
-
-                    <NavLink className="link" to="/follow-up">
-                    <i><MdAssignmentLate size={20}/></i>
-                        <span>Follow-up</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/assignments">
-                    <i><MdAssignmentLate size={20}/></i>
-                        <span>Assignments</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/assignment-submissions">
-                    <i><MdAssignmentTurnedIn size={20}/></i>
-                        <span>Assignment Submissions</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/assessments">
-                    <i><MdAssessment size={20}/></i>
-                        <span>Assessment</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/assessment-submissions">
-                    <i><MdAssessment size={20}/></i>
-                        <span>Assessment Submissions</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/pass-exams">
-                    <i><MdAssessment size={20}/></i>
-                        <span>Pass Exams</span>
-                    </NavLink>
-
-                    <NavLink className="link" to="/live-session">
-                    <i><GoDeviceCameraVideo size={20}/></i>
-                        <span>Live Sessions</span>
-                    </NavLink>
-                    
-                    
-                </div>
-               
-            </div>
+          </div>
         </div>
-        <div className={`main ${!showNav ? 'expand' : ''}`}>
-            <header className={`${!showNav ? 'expand' : ''}`}>
-                <div className="con">
-                    <div className="nav-toggler-btn" onClick={toggleNav}>
-                        <i className="fa fa-bars" aria-hidden="true"></i>
-                    </div>
-                    <span>
-                    <select onChange={handleAccademicYearChange} value={activeAcademyYear} id="" className="language-dashboard">
-                           {academicYears.map((acca: any) => <option value={acca._id}>{acca?.title}</option> )}
-                           {/* <option value='hghhfhffgggdgd'>Test</option> */}
-                    </select>
-                    <div className="divider"></div>
-                        <select value={lang} onChange={(e: any) => setLang(e.target.value)} id="" className="language-dashboard">
-                            <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN</option>
-                            <option value="fr">🇫🇷 FR</option>
-                        </select>
-                        <div className="divider"></div>
-                        <a href="" className="link notify">
-                            <i className="fa fa-bell" aria-hidden="true"></i>
-                        </a>
-                        <div className="divider"></div>
-                        <div className="profile-btn" onClick={() => setShowUserMenu(!showUserMenu)}>
-                            <div className="name">{t('hello')} Admin</div>
-                            {/* <img src="./assets/images/users/user-1.png" alt=""> */}
-                        </div>
-                    </span>
+        <div className={`main ${!showNav ? "expand" : ""}`}>
+          <header className={`${!showNav ? "expand" : ""}`}>
+            <div className="con">
+              <div className="nav-toggler-btn" onClick={toggleNav}>
+                <i className="fa fa-bars" aria-hidden="true"></i>
+              </div>
+              <span>
+                <select
+                  onChange={handleAccademicYearChange}
+                  value={activeAcademyYear}
+                  id=""
+                  className="language-dashboard"
+                >
+                  {academicYears.map((acca: any) => (
+                    <option value={acca._id}>{acca?.title}</option>
+                  ))}
+                  {/* <option value='hghhfhffgggdgd'>Test</option> */}
+                </select>
+                <div className="divider"></div>
+                <select
+                  value={lang}
+                  onChange={(e: any) => setLang(e.target.value)}
+                  id=""
+                  className="language-dashboard"
+                >
+                  <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN</option>
+                  <option value="fr">🇫🇷 FR</option>
+                </select>
+                <div className="divider"></div>
+                <a href="" className="link notify">
+                  <i className="fa fa-bell" aria-hidden="true"></i>
+                </a>
+                <div className="divider"></div>
+                <div
+                  className="profile-btn"
+                  onClick={() => setShowUserMenu(!showUserMenu)}
+                >
+                  <div className="name">
+                    {t("hello")} {user?.username}
+                  </div>
+                  {/* <img src="./assets/images/users/user-1.png" alt=""> */}
                 </div>
-            </header>
-            
-            <div className={`user-menu ${showUserMenu ? 'show' : ''}`}>
-                <div className="user-menu-top">
-                    <i className="fa fa-times" onClick={() => setShowUserMenu(!showUserMenu)}></i>
-                    <img src={require("../../assets/images/users/avatar.jpg")} alt="" />
-                    <p>{user?.username}</p>
-                    <span>Teacher</span>
-                </div>
-                <div className="user-menu-footer">
-                    <a><i className="fas fa-cog"></i> Settings</a>
-                    <a onClick={handleLogout} className="logout-link"><i className="fas fa-door-open"></i> Logout</a>
-                </div>
+              </span>
             </div>
-            
-            <div className="content">
-                    <div className="con">
-                        <div className="page-title">
-                            <p>{title}</p>
-                            <div className="crumb">
-                                <NavLink to="/dashboard" className="crumb-item">{t('layout.dashboard')}</NavLink>
-                                <span>{'>'}</span>
-                                <a className="crumb-item">{ pageTitle }</a>
-                            </div>
-                        </div>
+          </header>
 
-                        <div className="section">
-                            { children }
-                        </div>
+          <div className={`user-menu ${showUserMenu ? "show" : ""}`}>
+            <div className="user-menu-top">
+              <i
+                className="fa fa-times"
+                onClick={() => setShowUserMenu(!showUserMenu)}
+              ></i>
+              <img
+                src={require("../../assets/images/users/avatar.jpg")}
+                alt=""
+              />
+              <p>{user?.username}</p>
+              <span>Teacher</span>
+            </div>
+            <div className="user-menu-footer">
+              <a>
+                <i className="fas fa-cog"></i> Settings
+              </a>
+              <a onClick={handleLogout} className="logout-link">
+                <i className="fas fa-door-open"></i> Logout
+              </a>
+            </div>
+          </div>
 
-                    </div>
+          <div className="content">
+            <div className="con">
+              <div className="page-title">
+                <p>{title}</p>
+                <div className="crumb">
+                  <NavLink to="/dashboard" className="crumb-item">
+                    {t("layout.dashboard")}
+                  </NavLink>
+                  <span>{">"}</span>
+                  <a className="crumb-item">{pageTitle}</a>
                 </div>
+              </div>
 
-            <footer className={`${!showNav ? 'expand' : ''}`}>
-                <div className="con">
-                    <p>{t('copywright_text')}</p>
-                    <p>Version 1.0</p>
-                </div>
-            </footer>
+              <div className="section">{children}</div>
+            </div>
+          </div>
+
+          <footer className={`${!showNav ? "expand" : ""}`}>
+            <div className="con">
+              <p>{t("copywright_text")}</p>
+              <p>Version 1.0</p>
+            </div>
+          </footer>
         </div>
-    </div>
+      </div>
     );
 }
 

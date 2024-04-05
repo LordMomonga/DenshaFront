@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
         features_one: "Join live class sessions",
         features_two: "Access past exams and their solutions",
         features_three: "Access recorded versions of class sessions",
-        copywright_text: "© 2023 237 Virtual Academy. All rights reserved",
+        copywright_text: "© 2024 Densha . All rights reserved",
         login_title: "Login",
         account_text: "Don't have an account?",
         welcome_back_text: "Welcome Back",
@@ -172,7 +172,7 @@ i18n.use(initReactI18next).init({
         home_welcome: "Bienvenue à",
         home_title: "Densha est :",
         home_descriptioon:
-          "Nos solutions d'apprentissage à distance vous fournissent tous les outils dont vous avez besoin pour réussir vos études où que vous soyez. Rejoignez des sessions en direct, accédez au contenu et aux évaluations des cours et communiquez avec vos camarades de classe et votre enseignant.",
+          "Notre solution d'apprentissage à distance vous fournissent tous les outils dont vous avez besoin pour réussir vos études où que vous soyez. Rejoignez des sessions en direct, accédez au contenu et aux évaluations des cours et communiquez avec vos camarades de classe et votre enseignant.",
         register_text: "S'inscrire",
         login_text: "S'identifier",
         how_it_works: "Comment ça fonctionne",
@@ -191,7 +191,7 @@ i18n.use(initReactI18next).init({
         features_three:
           "Accéder aux versions enregistrées des sessions de cours",
         copywright_text:
-          "© 2023 237 Académie virtuelle. Tous les droits sont réservés",
+          "© 2024 Densha. Tous les droits sont réservés",
         login_title: "Connexion",
         account_text: "Vous n'avez pas de compte ?",
         welcome_back_text: "Content de te revoir",

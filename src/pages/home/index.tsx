@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { AiOutlineUserAdd } from 'react-icons/ai';
-import { CiFacebook } from 'react-icons/ci';
+import { CiFacebook, CiInstagram } from 'react-icons/ci';
 import { BsCheck2Circle }  from 'react-icons/bs';
 import './home.css';
 import { Link } from "react-router-dom";
 import { MdContentCopy } from 'react-icons/md';
+
 
 
 import Tippy from '@tippyjs/react';
@@ -225,6 +226,7 @@ function Index() {
             </div>
           </section>
         </div>
+     
     
         <section className="waiting">
           <div className="con">
@@ -351,7 +353,7 @@ function Index() {
                   <a href=""><CiFacebook size={20} color="#fff"/></a>
                 </li>
                 <li>
-                 <a href=""><CiFacebook size={20} color="#fff"/></a>
+                 <a href=""><CiInstagram size={20} color="#fff"/></a>
                 </li>
                 <li>
                  <a href=""><CiFacebook size={20} color="#fff"/></a>
